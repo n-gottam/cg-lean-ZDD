@@ -1,6 +1,6 @@
 ---
 applications:
-- name: shows
+- name: shows-ZDD
   host: shows-ZDD_APP
   domain: cglean.com
   memory: 1024MB
