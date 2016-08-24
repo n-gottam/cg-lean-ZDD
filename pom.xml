@@ -114,6 +114,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -135,5 +140,18 @@
 			</snapshots>
 		</repository>
 	</repositories>
+	<distributionManagement>
+                <repository>
+                                <id>deployment</id>
+                                <url>http://54.83.156.141:8081/artifactory/ext-snapshot-local/</url>
+                </repository>
+                
+                                
+                <snapshotRepository>
+                                <id>deployment</id>
+                                <url>http://54.83.156.141:8081/artifactory/ext-snapshot-local/</url> 
+                </snapshotRepository>
+     </distributionManagement>
+
 
 </project>
