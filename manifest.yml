@@ -1,7 +1,7 @@
 ---
 applications:
-- name: shows-ZDD-V3
-  host: shows-cglean-v3
+- name: shows
+  host: shows-cglean-v2
   domain: cglean.com
   memory: 1024MB
   instances: 1
